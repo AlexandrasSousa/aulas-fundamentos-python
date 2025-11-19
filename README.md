@@ -3,3 +3,4 @@ Aulas de fundamento de Python
 
 Estou a aprender a mexer no git e no github desktop
 Esta mensagem vai aparecer no github
+esta mensagem é editada no github
