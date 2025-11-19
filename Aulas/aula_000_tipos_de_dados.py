@@ -1,0 +1,5 @@
+print("---Bem vindo ao meu programa---")
+nome = input("Antes de iniciarmos por favor digite o seu nome:")
+print("damos as boas vindas", nome)
+idade = input ("qual a sua idade?\n--»")
+print("uau", idade,"anos? Desfrute do nosso sistema!")
