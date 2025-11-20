@@ -1,13 +1,19 @@
-#aluno = dict()
-#aluno ["nome"] = "Ricardo"
-#aluno ["média"] = "20"
-#aluno ["situação"] = "aprovado"
-
 turma = []
-qtd_ alunos = 5
+qtd_alunos = 5
+aluno = dict() # ou {}
 
+for c in range(qtd_alunos):
+    aluno['Nome'] = input(f'Digite o nome do {c+1}º aluno: ')
+    aluno['Média'] = float(input(f'Digite a média do {aluno["Nome"]}: '))
 
-aluno = dict()
-aluno ["nome"] = input(f"Digite o nome do {c+1} aluno")
-aluno ["média"] = input(f"Digite a media do  {c+1} aluno")
-aluno ["situação"] = "aprovado"
+    # Situação com OPERADOR TERNÁRIO
+    aluno['Situação'] = 'Aprovado' if aluno['Média'] >= 9.5 else 'Reprovado'
+
+    # Situação com IF normal
+    '''if aluno['Média'] > 9.5:
+        aluno['Situação'] = 'Aprovado'
+    else:
+        aluno['Situação'] = 'Reprovado' '''
+
+    turma.append(aluno.copy())
+print(turma)
